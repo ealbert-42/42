@@ -1,25 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ealbert <ealbert@student42.fr>             +#+  +:+       +#+        */
+/*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/23 11:19:11 by ealbert           #+#    #+#             */
-/*   Updated: 2015/11/23 17:28:47 by ealbert          ###   ########.fr       */
+/*   Created: 2015/11/23 17:59:42 by ealbert           #+#    #+#             */
+/*   Updated: 2015/11/23 18:01:38 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcpy(char *dst, const char *src, size_t n)
+int		ft_strcmp(const char *s1, const char *s2, size_t n)
 {
 	int		i;
 
 	i = 0;
-	while (src[i] != '\0' && i < n)
-	{
-		dst[i] = src[i];
+	while (s1[i] == s2[i] && s1[i] != '\0' && s2[i] != '\0')
 		i++;
-	}
-	dest[i] = '\0';
-	return (dst);
+	return (s1[i] - s2[i]);
 }
