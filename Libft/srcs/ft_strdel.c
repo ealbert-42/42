@@ -1,36 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_strdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/23 13:35:09 by ealbert           #+#    #+#             */
-/*   Updated: 2015/11/23 13:58:54 by ealbert          ###   ########.fr       */
+/*   Created: 2015/11/25 15:53:16 by ealbert           #+#    #+#             */
+/*   Updated: 2015/11/25 19:19:27 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*strstr(const char *s1, const char *s2)
-{
-	int		i;
-	int		j;
-	int		k;
+#include "libft.h"
 
-	i = 0;
-	j = 0;
-	if (!s2)
-		return (s1);
-	while (s1[i] != '\0' && s2[i] != '\0')
-	{
-		if (s1[i] == s2[0])
-			k = i;
-		if (s2[i] == s1[j])
-			j++;
-		else
-			j = 0;
-		i++;
-	}
-	if (s2[j] != '\0')
-		return (0);
-	return (s1[k]);
+void	ft_strdel(char **as)
+{
+	free(*as);
+	*as = NULL;
 }

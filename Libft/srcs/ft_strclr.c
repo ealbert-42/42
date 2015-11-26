@@ -1,31 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strclr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/23 14:40:04 by ealbert           #+#    #+#             */
-/*   Updated: 2015/11/23 16:26:20 by ealbert          ###   ########.fr       */
+/*   Created: 2015/11/25 16:04:37 by ealbert           #+#    #+#             */
+/*   Updated: 2015/11/25 16:06:46 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+void	ft_strclr(char *s)
 {
-	int				i;
-	int				j;
+	int		i;
 
-	j = 0;
 	i = 0;
-	while (n != 0)
+	if (*s)
 	{
-		if (!dst)
+		while (s[i])
 		{
-			dst[i] = src[j];
-			j++;
-			n--;
+			s[i] = 0;
+			i++;
 		}
-		i++;
 	}
-	return (dst);
 }

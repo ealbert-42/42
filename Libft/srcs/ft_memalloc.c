@@ -1,31 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_memalloc.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/23 11:02:13 by ealbert           #+#    #+#             */
-/*   Updated: 2015/11/23 14:15:41 by ealbert          ###   ########.fr       */
+/*   Created: 2015/11/25 16:01:27 by ealbert           #+#    #+#             */
+/*   Updated: 2015/11/25 17:22:22 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memset(void *b, int c, size_t len)
-{
-	int				i;
-	char			*tmp;
-	unsigned char	fill;
+#include "libft.h"
 
-	tmp = (char *)b;
+void	*ft_memalloc(size_t size)
+{
+	void			*new;
+	int				i;
+	unsigned char	*tmp;
+
+	new = malloc(size);
+	tmp = (unsigned char *)new;
 	i = 0;
-	fill = c;
-	while (d[i])
-		i++;
-	while (len != 0)
+	if (!new)
+		return (NULL);
+	else
 	{
-		b[i] = fill;
-		i++;
-		len--;
+		while (i < size)
+		{
+			tmp[i] = 0;
+			i++;
+		}
 	}
-	return ((void *)b);
+	new = (void *)tmp;
+	return (new);
 }
