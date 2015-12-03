@@ -6,7 +6,7 @@
 /*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 15:48:14 by ealbert           #+#    #+#             */
-/*   Updated: 2015/11/30 18:22:31 by ealbert          ###   ########.fr       */
+/*   Updated: 2015/12/03 16:41:47 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,12 @@ typedef struct			s_list
 	struct	s_list *next;
 } 						t_list;
 
+char			*ft_lowstr(char *str);
+char			*ft_uppstr(char *str);
+int				ft_sqrt(int nb);
+int				ft_pgcd(int nb1, int nb2);
+char			*ft_strrev(char *str);
+int				ft_calculator(int nb1, char c, int nb2);
 int				ft_atoi(const char *str);
 void			ft_bzero(void *s, size_t n);
 int				ft_isalnum(int c);

@@ -1,25 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter.c                                       :+:      :+:    :+:   */
+/*   ft_pgcd.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/30 17:35:27 by ealbert           #+#    #+#             */
-/*   Updated: 2015/12/03 16:23:00 by ealbert          ###   ########.fr       */
+/*   Created: 2015/12/03 15:14:12 by ealbert           #+#    #+#             */
+/*   Updated: 2015/12/03 15:35:21 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		ft_lstiter(t_list *lst, void (*f)(t_list *elem))
+int		ft_pgcd(int nb1, int nb2)
 {
-	t_list	*next;
+	int		k;
+	int		i;
 
-	while (lst)
+	i = 0;
+	k = 2;
+	if ((nb1 < 2 && nb1 > -1) || (nb2 < 2 && nb2 > -1))
+		return (1);
+	while (k <= nb1 || k <= nb2)
 	{
-		next = lst->next;
-		f(lst);
-		lst = next;
+		if (nb1 % k == 0 && nb2 % k == 0)
+			i = k;
+		k++;
 	}
+	return (i);
 }

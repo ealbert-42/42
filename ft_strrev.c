@@ -1,25 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter.c                                       :+:      :+:    :+:   */
+/*   ft_strrev.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/30 17:35:27 by ealbert           #+#    #+#             */
-/*   Updated: 2015/12/03 16:23:00 by ealbert          ###   ########.fr       */
+/*   Created: 2015/12/03 13:14:04 by ealbert           #+#    #+#             */
+/*   Updated: 2015/12/03 13:31:55 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		ft_lstiter(t_list *lst, void (*f)(t_list *elem))
+char	*ft_strrev(char *str)
 {
-	t_list	*next;
+	int		i;
+	int		j;
+	int		k;
+	char	tmp;
 
-	while (lst)
+	j = 0;
+	i = 0;
+	while (str[i + 1])
+		i++;
+	k = i / 2;
+	while (j < k)
 	{
-		next = lst->next;
-		f(lst);
-		lst = next;
+		tmp = str[j];
+		str[j] = str[i];
+		str[i] = tmp;
+		i--;
+		j++;
 	}
+	return (str);
 }

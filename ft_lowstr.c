@@ -1,25 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter.c                                       :+:      :+:    :+:   */
+/*   ft_lowstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/30 17:35:27 by ealbert           #+#    #+#             */
-/*   Updated: 2015/12/03 16:23:00 by ealbert          ###   ########.fr       */
+/*   Created: 2015/12/03 16:32:13 by ealbert           #+#    #+#             */
+/*   Updated: 2015/12/03 16:33:07 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		ft_lstiter(t_list *lst, void (*f)(t_list *elem))
+char	*ft_lowstr(char *str)
 {
-	t_list	*next;
+	int		i;
 
-	while (lst)
+	i = 0;
+	while (str[i])
 	{
-		next = lst->next;
-		f(lst);
-		lst = next;
+		str[i] = ft_tolwer(str[i]);
+		i++;
 	}
+	return (str);
 }

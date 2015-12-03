@@ -1,25 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter.c                                       :+:      :+:    :+:   */
+/*   ft_calculator.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/30 17:35:27 by ealbert           #+#    #+#             */
-/*   Updated: 2015/12/03 16:23:00 by ealbert          ###   ########.fr       */
+/*   Created: 2015/12/03 13:08:28 by ealbert           #+#    #+#             */
+/*   Updated: 2015/12/03 15:13:53 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		ft_lstiter(t_list *lst, void (*f)(t_list *elem))
+int		ft_calculator(int nb1, char c, int nb2)
 {
-	t_list	*next;
+	int		nbpw;
 
-	while (lst)
+	nbpw = nb1;
+	if (c == '+')
+		return (nb1 + nb2);
+	if (c == '-')
+		return (nb1 - nb2);
+	if (c == '*')
+		return (nb1 * nb2);
+	if (c == '/')
+		return (nb1 / nb2);
+	if (c == '%')
+		return (nb1 % nb2);
+	if (c == '^')
 	{
-		next = lst->next;
-		f(lst);
-		lst = next;
+		while (nb2-- > 1)
+		{
+			nb1 *= nbpw;
+		}
+		return (nb1);
 	}
+	return (0);
 }
