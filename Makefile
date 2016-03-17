@@ -6,11 +6,11 @@
 #    By: ealbert <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/12/01 17:58:49 by ealbert           #+#    #+#              #
-#    Updated: 2016/03/17 10:33:57 by ealbert          ###   ########.fr        #
+#    Updated: 2016/03/17 16:28:38 by ealbert          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-.SUFFIXES: 
+.SUFFIXES:
 
 .PHONY: all clean fclean re
 
@@ -161,7 +161,7 @@ all: $(NAME)
 
 clean:
 	@rm -rf TMP
-	@echo "\033[33;32m===LIBFT : Removed the objects files folder successfully.\033[0m"
+	@echo "\033[33;32m===LIBFT : Removed the object files folder successfully.\033[0m"
 
 fclean: clean
 	@rm -rf $(NAME)
