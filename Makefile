@@ -6,7 +6,7 @@
 #    By: ealbert <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/12/01 17:58:49 by ealbert           #+#    #+#              #
-#    Updated: 2016/03/17 16:28:38 by ealbert          ###   ########.fr        #
+#    Updated: 2016/04/08 19:40:47 by ealbert          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,10 +18,13 @@ NAME = libft.a
 
 COMPIL = gcc -Wall -Wextra -Werror
 
-SRCS =	SOURCES/ft_atoi.c \
+SRCS =	SOURCES/ft_strndup.c \
+		SOURCES/ft_atoi.c \
+		SOURCES/ft_itoa_base.c \
 		SOURCES/ft_isdigit.c \
 		SOURCES/ft_memchr.c \
 		SOURCES/ft_memset.c \
+		SOURCES/ft_strnjoin.c \
 		SOURCES/ft_putnbr.c \
 		SOURCES/ft_strchr.c \
 		SOURCES/ft_strdup.c \
@@ -85,8 +88,10 @@ SRCS =	SOURCES/ft_atoi.c \
 INCLUDES = -I .
 
 OBJ =	ft_atoi.o \
+		ft_itoa_base.o \
 		ft_isdigit.o \
 		ft_memchr.o \
+		ft_strnjoin.o \
 		ft_memset.o \
 		ft_putnbr.o \
 		ft_strchr.o \
