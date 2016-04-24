@@ -6,12 +6,14 @@
 /*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 15:48:14 by ealbert           #+#    #+#             */
-/*   Updated: 2016/04/08 19:41:16 by ealbert          ###   ########.fr       */
+/*   Updated: 2016/04/24 12:39:28 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# define BUFF_SIZE 64
+# define MAX_FD 256
 # include <string.h>
 # include <unistd.h>
 # include <stdlib.h>
