@@ -6,7 +6,7 @@
 #    By: ealbert <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/12/01 17:58:49 by ealbert           #+#    #+#              #
-#    Updated: 2016/04/08 19:40:47 by ealbert          ###   ########.fr        #
+#    Updated: 2016/04/24 12:43:13 by ealbert          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,6 +20,7 @@ COMPIL = gcc -Wall -Wextra -Werror
 
 SRCS =	SOURCES/ft_strndup.c \
 		SOURCES/ft_atoi.c \
+		SOURCES/get_next_line.c \
 		SOURCES/ft_itoa_base.c \
 		SOURCES/ft_isdigit.c \
 		SOURCES/ft_memchr.c \
@@ -88,6 +89,7 @@ SRCS =	SOURCES/ft_strndup.c \
 INCLUDES = -I .
 
 OBJ =	ft_atoi.o \
+		get_next_line.o \
 		ft_itoa_base.o \
 		ft_isdigit.o \
 		ft_memchr.o \
