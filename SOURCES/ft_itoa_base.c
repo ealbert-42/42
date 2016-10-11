@@ -35,18 +35,16 @@ static int	matching(char *base)
 	i = 0;
 	if (!base[i])
 		return (-1);
-	while (base[i + 1])
+	while (base[++i])
 	{
-		j = i + 1;
-		while (base[j])
+		j = i;
+		while (base[++j])
 		{
 			if (base[j] == base[i])
 				return (-1);
-			j++;
 		}
-		i++;
 	}
-	return (i + 1);
+	return (i);
 }
 
 char		*ft_itoa_base(int nb, char *base)
