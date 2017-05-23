@@ -6,11 +6,13 @@
 /*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 12:47:07 by ealbert           #+#    #+#             */
-/*   Updated: 2015/11/26 15:21:26 by ealbert          ###   ########.fr       */
+/*   Updated: 2017/05/23 18:35:25 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+/*
+** Checks if 'c' is an ASCII number. Returns 0 if it isn't.
+*/
 
 int		ft_isdigit(int c)
 {

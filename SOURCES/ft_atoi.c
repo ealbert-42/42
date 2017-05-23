@@ -6,9 +6,14 @@
 /*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 17:41:10 by ealbert           #+#    #+#             */
-/*   Updated: 2016/01/18 11:39:41 by ealbert          ###   ########.fr       */
+/*   Updated: 2017/05/23 18:29:46 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Returns an integer out of a string. If no number are in the string, the
+** functions returns 0.
+**/
 
 int		ft_atoi(const char *str)
 {

@@ -6,46 +6,40 @@
 /*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 16:30:55 by ealbert           #+#    #+#             */
-/*   Updated: 2016/01/18 12:31:59 by ealbert          ###   ########.fr       */
+/*   Updated: 2017/05/23 18:37:22 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+/*
+** Returns a string containing the 'n' number.
+*/
 
-static void	itoa_isnegative(int *n, int *negative)
-{
-	if (*n < 0)
-	{
-		*n *= -1;
-		*negative = 1;
-	}
-}
+#include "libft.h"
 
 char		*ft_itoa(int n)
 {
-	int		tmpn;
-	int		len;
-	int		negative;
-	char	*str;
-
-	if (n == -2147483648)
-		return (ft_strdup("-2147483648"));
-	tmpn = n;
-	len = 2;
-	negative = 0;
-	itoa_isnegative(&n, &negative);
-	while (tmpn /= 10)
-		len++;
-	len += negative;
-	if ((str = (char*)malloc(sizeof(char) * len)) == NULL)
-		return (NULL);
-	str[--len] = '\0';
-	while (len--)
+	char			*s;
+	int				len;
+	unsigned int	nb;
+	int				sign;
+	
+	sign = (n < 0) ? 1 : 0;
+	len = (sign) ? 1 : 0;
+	nb = (sign) ? -n : n;
+	while (n != 0)
 	{
-		str[len] = n % 10 + '0';
-		n = n / 10;
+		n /= 10;
+		len++;
 	}
-	if (negative)
-		str[0] = '-';
-	return (str);
+	if (!(s = (char *)malloc(sizeof(char) * len + 1)))
+		return ((char *)0);
+	s[0] = '0';
+	s[len--] = '\n';
+	while (nb)
+	{
+		s[len--] = nb % 10 + '0';
+		nb /= 10;
+	}
+	s[0] = (sign) ? '-' : s[0];
+	return (s);
 }

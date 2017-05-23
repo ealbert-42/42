@@ -6,11 +6,13 @@
 /*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 12:52:05 by ealbert           #+#    #+#             */
-/*   Updated: 2015/11/26 15:20:57 by ealbert          ###   ########.fr       */
+/*   Updated: 2017/05/23 18:35:45 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+/*
+** Checks if 'c' is an ASCII letter. Returns 0 if it isn't.
+*/
 
 int		ft_isalpha(int c)
 {

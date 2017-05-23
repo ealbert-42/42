@@ -6,11 +6,13 @@
 /*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 12:55:39 by ealbert           #+#    #+#             */
-/*   Updated: 2015/11/30 18:51:55 by ealbert          ###   ########.fr       */
+/*   Updated: 2017/05/23 18:35:37 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+/*
+** Checks if 'c' is an ASCII letter or a number. Returns 0 if it's not the case.
+*/
 
 int		ft_isalnum(int c)
 {

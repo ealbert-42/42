@@ -6,9 +6,18 @@
 /*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/08 18:29:27 by ealbert           #+#    #+#             */
-/*   Updated: 2016/04/08 19:40:19 by ealbert          ###   ########.fr       */
+/*   Updated: 2017/05/23 18:42:40 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Returns a string containing the conversion of 'nb' in the given base.
+**
+** If the base has 2 matching characters, the function returns NULL.
+**
+** Exemples : if "0123456789" is the base, number 81645 becomes "81645".
+**            if "whiskeyxD!" is the base, number 81645 becomes "Dhyke".
+*/
 
 #include "libft.h"
 
@@ -61,6 +70,7 @@ char		*ft_itoa_base(int nb, char *base)
 		return (NULL);
 	new[--len2] = '\0';
 	nbr = (unsigned int)((nb < 0) ? -nb : nb);
+	new[0] = '0';
 	while (nbr)
 	{
 		new[--len2] = base[nbr % len];

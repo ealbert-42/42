@@ -6,11 +6,13 @@
 /*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 12:44:24 by ealbert           #+#    #+#             */
-/*   Updated: 2015/11/26 15:21:12 by ealbert          ###   ########.fr       */
+/*   Updated: 2017/05/23 18:35:50 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+/*
+** Checks if 'c' is part of the ASCII table. Returns 0 if it isn't.
+*/
 
 int		ft_isascii(int c)
 {

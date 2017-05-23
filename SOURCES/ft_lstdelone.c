@@ -6,9 +6,14 @@
 /*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/30 17:25:56 by ealbert           #+#    #+#             */
-/*   Updated: 2015/12/03 11:53:40 by ealbert          ###   ########.fr       */
+/*   Updated: 2017/05/23 18:47:35 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Free the given link.
+** del is a function that must be created by the user in order to free the link.
+*/
 
 #include "libft.h"
 
