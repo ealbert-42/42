@@ -6,9 +6,15 @@
 /*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 16:18:26 by ealbert           #+#    #+#             */
-/*   Updated: 2015/12/02 16:47:23 by ealbert          ###   ########.fr       */
+/*   Updated: 2017/05/24 20:15:35 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Search for the first occurence of the c byte on the s memory address
+** on the n first bytes.  Returns a pointer beginning to the first occurence of
+** the c byte.
+*/
 
 #include "libft.h"
 

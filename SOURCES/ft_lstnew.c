@@ -6,9 +6,13 @@
 /*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/30 15:19:32 by ealbert           #+#    #+#             */
-/*   Updated: 2016/01/18 16:58:35 by ealbert          ###   ########.fr       */
+/*   Updated: 2017/05/24 20:10:09 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Allocates a new node for a list, filled with content and his size.
+*/
 
 #include "libft.h"
 

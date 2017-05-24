@@ -6,9 +6,13 @@
 /*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/30 17:41:33 by ealbert           #+#    #+#             */
-/*   Updated: 2015/12/03 14:04:22 by ealbert          ###   ########.fr       */
+/*   Updated: 2017/05/24 20:09:29 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Returns a list from the 'lst' list that has been modified by the f function.
+*/
 
 #include "libft.h"
 

@@ -6,9 +6,13 @@
 /*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 12:05:23 by ealbert           #+#    #+#             */
-/*   Updated: 2015/11/26 15:24:10 by ealbert          ###   ########.fr       */
+/*   Updated: 2017/05/24 20:36:00 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Prints the 's' string in the terminal.
+*/
 
 #include "libft.h"
 

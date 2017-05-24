@@ -6,9 +6,13 @@
 /*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 16:11:21 by ealbert           #+#    #+#             */
-/*   Updated: 2015/11/26 17:53:10 by ealbert          ###   ########.fr       */
+/*   Updated: 2017/05/24 20:34:37 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Prints the 's' string in the 'fd' file descriptor, followed by a newline.
+*/
 
 #include "libft.h"
 

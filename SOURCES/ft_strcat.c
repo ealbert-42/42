@@ -6,9 +6,13 @@
 /*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 11:08:38 by ealbert           #+#    #+#             */
-/*   Updated: 2015/11/30 14:32:24 by ealbert          ###   ########.fr       */
+/*   Updated: 2017/05/24 20:37:19 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Copies teh 's2' string at the end of 's1' string. 
+*/
 
 #include "libft.h"
 

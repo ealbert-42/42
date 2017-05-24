@@ -6,9 +6,15 @@
 /*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 17:55:58 by ealbert           #+#    #+#             */
-/*   Updated: 2015/12/03 11:32:47 by ealbert          ###   ########.fr       */
+/*   Updated: 2017/05/24 20:14:10 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Fills dst with src memory address for n bytes. If c character is found,
+** puts the occurence in dst and returns the part of dst that hasn't been
+** touched. Else, returns NULL.
+*/
 
 #include "libft.h"
 

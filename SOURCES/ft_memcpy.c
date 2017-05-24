@@ -6,9 +6,13 @@
 /*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 14:40:04 by ealbert           #+#    #+#             */
-/*   Updated: 2015/11/30 19:16:14 by ealbert          ###   ########.fr       */
+/*   Updated: 2017/05/24 20:16:57 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Copies n bytes of src into dst memory addresses.
+*/
 
 #include "libft.h"
 

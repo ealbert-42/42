@@ -6,9 +6,13 @@
 /*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/25 16:01:27 by ealbert           #+#    #+#             */
-/*   Updated: 2015/11/26 15:22:03 by ealbert          ###   ########.fr       */
+/*   Updated: 2017/05/24 20:11:53 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Allocates a memory address and set every bytes to 0.
+*/
 
 #include "libft.h"
 

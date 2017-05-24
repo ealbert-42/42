@@ -6,9 +6,14 @@
 /*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 16:24:52 by ealbert           #+#    #+#             */
-/*   Updated: 2015/12/01 18:33:12 by ealbert          ###   ########.fr       */
+/*   Updated: 2017/05/24 20:16:32 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Compares n bytes of the s1 and s2 memory address and returns the difference.
+** Returns 0 if s1 and s2 are the same.
+*/
 
 #include "libft.h"
 

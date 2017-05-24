@@ -6,9 +6,14 @@
 /*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 16:08:32 by ealbert           #+#    #+#             */
-/*   Updated: 2016/01/18 11:34:41 by ealbert          ###   ########.fr       */
+/*   Updated: 2017/05/24 20:30:40 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Copies the 'n' first bytes of 'src'
+** at the beginning of 'dest' memory address.
+*/
 
 #include "libft.h"
 

@@ -6,9 +6,13 @@
 /*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 16:16:16 by ealbert           #+#    #+#             */
-/*   Updated: 2015/11/30 20:58:51 by ealbert          ###   ########.fr       */
+/*   Updated: 2017/05/24 20:35:16 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Prints the 'nb' integer in the terminal.
+*/
 
 #include "libft.h"
 

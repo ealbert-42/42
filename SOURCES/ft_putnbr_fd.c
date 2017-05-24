@@ -6,9 +6,13 @@
 /*   By: ealbert <ealbert@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 16:16:16 by ealbert           #+#    #+#             */
-/*   Updated: 2015/12/03 15:37:50 by ealbert          ###   ########.fr       */
+/*   Updated: 2017/05/24 20:35:40 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Prints the 'nb' integer in the 'fd' file descriptor.
+*/
 
 #include "libft.h"
 

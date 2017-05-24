@@ -6,9 +6,13 @@
 /*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 12:04:39 by ealbert           #+#    #+#             */
-/*   Updated: 2015/11/26 15:23:03 by ealbert          ###   ########.fr       */
+/*   Updated: 2017/05/24 20:33:25 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Prints the 'c' byte on the terminal.
+*/
 
 #include "libft.h"
 
